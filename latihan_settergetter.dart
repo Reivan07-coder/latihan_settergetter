@@ -1,17 +1,11 @@
-void main(){
-var pakaian1 = Pakaian(jenis: 'merah', warna: 'celana');
-  // batas coding
-}
-class Pakaian{
-  String? _jenis;
-  String? _warna;
-  String? _harga;
-  int? _berat;
+import 'pakaian.dart';
 
-  Pakaian({required jenis, required warna, harga, berat}){
-    _jenis=jenis;
-    _berat=berat;
-    _harga=harga;
-    _warna=warna;
-  }
+void main(){
+var pakaian1 = Pakaian(jenis: 'celana', warna: 'merah');
+pakaian1.inputwarna='hijau';
+pakaian1.ubahatribut('abu', 'kemeja',1000,120000);
+print(pakaian1.tampilwarna);
+pakaian1.tampilatribut();
+
+  // batas coding
 }
